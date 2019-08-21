@@ -82,54 +82,6 @@
   {% include "fonts.html" %}
 </head>
 
-<div class="container-fluid header-holder tutorials-header" id="header-holder">
-  <div class="container">
-    <div class="header-container">
-      <a class="header-logo" href="{{ theme_variables.external_urls['home'] }}" aria-label="PyTorch"></a>
-
-      <div class="main-menu">
-        <ul>
-          <li>
-            <a href="{{ theme_variables.external_urls['get_started'] }}">Get Started</a>
-          </li>
-
-          <li>
-            <a href="{{ theme_variables.external_urls['features'] }}">Features</a>
-          </li>
-
-          <li>
-            <a href="{{ theme_variables.external_urls['ecosystem'] }}">Ecosystem</a>
-          </li>
-
-          <li>
-            <a href="{{ theme_variables.external_urls['blog'] }}">Blog</a>
-          </li>
-
-          <li {%- if theme_pytorch_project == 'tutorials' %} class="active"{% endif %}>
-            <a href="{{ theme_variables.external_urls['tutorials'] }}">Tutorials</a>
-          </li>
-
-          <li {%- if theme_pytorch_project == 'docs' %} class="active"{% endif %}>
-            <a href="{{ theme_variables.external_urls['docs'] }}">Docs</a>
-          </li>
-
-          <li>
-            <a href="{{ theme_variables.external_urls['resources'] }}">Resources</a>
-          </li>
-
-          <li>
-            <a href="{{ theme_variables.external_urls['github'] }}">Github</a>
-          </li>
-        </ul>
-      </div>
-
-      <a class="main-menu-open-button" href="#" data-behavior="open-mobile-menu"></a>
-    </div>
-
-  </div>
-</div>
-
-
 <body class="pytorch-body">
 
   {% block extrabody %} {% endblock %}
